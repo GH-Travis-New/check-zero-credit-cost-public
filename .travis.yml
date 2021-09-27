@@ -228,21 +228,21 @@ jobs:
       script:
         - clang -coverage -O0 hello_world.c -o hello_world
         - ./hello_world
-    - os: linux
-      language: c
-      arch: ppc64le
-      dist: bionic
-      before_install:
-        - cmake --version
-        - git --version
-        - git --help
-        - uname -a
-        - lscpu
-        - free -h
-        - lshw -short
-      script:
-        - clang -coverage -O0 hello_world.c -o hello_world
-        - ./hello_world
+#     - os: linux
+#       language: c
+#       arch: ppc64le
+#       dist: bionic
+#       before_install:
+#         - cmake --version
+#         - git --version
+#         - git --help
+#         - uname -a
+#         - lscpu
+#         - free -h
+#         - lshw -short
+#       script:
+#         - clang -coverage -O0 hello_world.c -o hello_world
+#         - ./hello_world
     - os: linux
       language: c
       arch: s390x
